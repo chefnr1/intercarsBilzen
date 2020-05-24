@@ -163,6 +163,20 @@ img {
     padding: 10px 0;
 }
 
+#news h4 a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#news h4 a:hover {
+    color: #ffbc00;
+}
+
+#news .tel-attr {
+    color: #fff;
+    text-decoration: underline;
+}
+
 
 /* Links */
 
@@ -938,9 +952,15 @@ img {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 425px) {
     #banner .content ul {
         display: none;
+    }
+    #map .section-title.text-center {
+        text-align: left;
+    }
+    #map .bottom-line-text {
+        margin: 0.5rem auto 1rem 0;
     }
     #contact .aside-1 .choose-list ul li {
         font-size: 0.9rem !important;
@@ -993,12 +1013,6 @@ img {
     #map .container h2 {
         font-size: 1.3rem;
     }
-    #map .section-title.text-center {
-        text-align: left;
-    }
-    #map .bottom-line-text {
-        margin: 0.5rem auto 1rem 0;
-    }
     #contact .contact h2 {
         font-size: 1.3rem;
     }
@@ -1035,77 +1049,31 @@ img {
 
 /* -- Tablet Landscape */
 
-@media (max-height: 768px) {
-    /* .btn {
-        padding: 10px 15px;
-        color: var(--white-primary-color);
-        font-size: 14px;
-    } */
-    /* .btn-large {
-        width: 45%;
-        padding: 8px 5px;
-        font-size: 14px;
-        line-height: 1.4;
-    } */
-    /* Historiek */
-    /* #banner {
-        height: 17vh;
-    } */
-    /* #banner .content {
-        /* Top, right, bottom, left */
-    /* padding: 3rem 5rem 0 5rem;
-    } */
-    /* #banner .content h1 {
-        font-size: 1.5rem;
-        font-weight: 800;
-    } */
-    /* #banner h3 {
+@media only screen and (orientation: landscape) and (max-width: 1024px) {
+    .main-photo {
+        height: 40rem;
+    }
+    #news h4 {
         font-size: 1rem;
-        font-weight: 500;
-    } */
-    /* #banner .pl-7 {
-        padding-left: 5rem;
-    } */
-    /* Contact */
-    /* #contact .contact {
-        flex: 1.4;
-    } */
-    /* #contact .aside {
-        flex: 1;
-    } */
-    /* Openingsuren */
-    /* #openingsuren .openingsuren-grid {
-        grid-template-columns: 0.4fr 1fr 0.4fr 1fr;
-        grid-template-areas: "show-titel show-titel recep-titel recep-titel" "show-dagen show-uren recep-dagen recep-uren" "werk-titel werk-titel . ." "werk-dagen werk-uren . .";
-    } */
-    /* #openingsuren .op-uren.show-titel {
-        grid-area: show-titel;
-         
-    } */
-    /* #openingsuren .op-uren.show-dagen {
-        grid-area: show-dagen;
-    } */
-    /* #openingsuren .op-uren.show-uren {
-        grid-area: show-uren;
-    } */
-    /* #openingsuren .op-uren.recep-titel {
-        grid-area: recep-titel;
-         
-    } */
-    /* #openingsuren .op-uren.recep-dagen {
-        grid-area: recep-dagen;
-    } */
-    /* #openingsuren .op-uren.recep-uren {
-        grid-area: recep-uren;
-    } */
-    /* #openingsuren .op-uren.werk-titel {
-        grid-area: werk-titel;
-        
-    } */
-    /* #openingsuren .op-uren.werk-dagen {
-        grid-area: werk-dagen;
-    } */
-    /* #openingsuren .op-uren.werk-uren {
-        grid-area: werk-uren;
-    } */
+    }
+    #banner .pt-1 {
+        padding-top: 0;
+    }
+}
+
+
+/* Smartphone landscape */
+
+@media only screen and (orientation: landscape) and (max-width: 850px) {
+    #banner {
+        height: 20vh;
+    }
+    #banner .content {
+        /* Top, right, bottom, left */
+        /* padding: 5rem 10rem 0 7rem; */
+    }
+    #banner .content h1 {
+        font-size: 20px;
+        font-weight: 800;
+    }
 }
