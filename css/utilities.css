@@ -73,6 +73,10 @@
     padding-top: 8rem;
 }
 
+.pt-9 {
+    padding-top: 9rem;
+}
+
 
 /* Padding bottom */
 
@@ -114,6 +118,10 @@
 
 .pb-8 {
     padding-bottom: 8rem;
+}
+
+.pb-9 {
+    padding-bottom: 9rem;
 }
 
 
@@ -159,6 +167,10 @@
     padding-right: 8rem;
 }
 
+.pr-9 {
+    padding-right: 9rem;
+}
+
 
 /* Padding left */
 
@@ -202,6 +214,10 @@
     padding-left: 8rem;
 }
 
+.pl-9 {
+    padding-left: 9rem;
+}
+
 
 /* Padding top & bottom */
 
@@ -241,6 +257,10 @@
     padding: 8rem 0;
 }
 
+.py-9 {
+    padding: 9rem 0;
+}
+
 
 /* Padding right & left */
 
@@ -278,6 +298,10 @@
 
 .px-8 {
     padding: 0 8rem;
+}
+
+.px-9 {
+    padding: 0 9rem;
 }
 
 
@@ -323,6 +347,10 @@
     margin-top: 8rem;
 }
 
+.mt-9 {
+    margin-top: 9rem;
+}
+
 
 /* Margin bottom */
 
@@ -364,6 +392,10 @@
 
 .mb-8 {
     margin-bottom: 8rem;
+}
+
+.mb-9 {
+    margin-bottom: 9rem;
 }
 
 
@@ -409,6 +441,10 @@
     margin-right: 8rem;
 }
 
+.mr-9 {
+    margin-right: 9rem;
+}
+
 
 /* Margin left */
 
@@ -452,6 +488,10 @@
     margin-left: 8rem;
 }
 
+.ml-9 {
+    margin-left: 9rem;
+}
+
 
 /* Margin top & bottom */
 
@@ -491,6 +531,10 @@
     margin: 8rem 0;
 }
 
+.my-9 {
+    margin: 9rem 0;
+}
+
 
 /* Margin right & left */
 
@@ -528,6 +572,10 @@
 
 .mx-8 {
     margin: 0 8rem;
+}
+
+.mx-9 {
+    margin: 0 9rem;
 }
 
 

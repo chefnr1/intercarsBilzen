@@ -562,7 +562,6 @@ img {
 }
 
 #openingsuren .op-uren.show-titel {
-    /* grid-column: 1 / span 2; */
     grid-area: show-titel;
 }
 
@@ -575,7 +574,6 @@ img {
 }
 
 #openingsuren .op-uren.recep-titel {
-    /* grid-column: 3 / span 2; */
     grid-area: recep-titel;
 }
 
@@ -588,7 +586,6 @@ img {
 }
 
 #openingsuren .op-uren.werk-titel {
-    /* grid-column: 5 / span 2; */
     grid-area: werk-titel;
 }
 
@@ -604,7 +601,15 @@ img {
 /* Footer */
 
 #footer {
+    width: 100%;
     background: #6d6a6a;
+}
+
+#footer.footer-fixed {
+    /* Safari */
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 #footer .item {
@@ -944,6 +949,12 @@ img {
         grid-area: werk-uren;
     }
     /* Footer */
+    /* Cookies */
+    #footer.footer-fixed {
+        position: static;
+        left: 0;
+        bottom: 0;
+    }
     #footer .footer-grid {
         grid-template-columns: 1fr;
     }
@@ -970,6 +981,12 @@ img {
     }
     #openingsuren .openingsuren-grid {
         font-size: 0.9rem !important;
+    }
+    #openingsuren .section-title.text-center {
+        text-align: left;
+    }
+    #openingsuren .bottom-line-text {
+        margin: 0.5rem auto 1rem 0;
     }
     /* Footer */
     #footer .item {
@@ -1032,12 +1049,6 @@ img {
         font-size: 0.7rem !important;
     }
     /* Openingsuren */
-    #openingsuren .section-title.text-center {
-        text-align: left;
-    }
-    #openingsuren .bottom-line-text {
-        margin: 0.5rem auto 1rem 0;
-    }
     #openingsuren h2 {
         font-size: 1.3rem;
     }
@@ -1049,7 +1060,8 @@ img {
 
 /* -- Tablet Landscape */
 
-@media only screen and (orientation: landscape) and (max-width: 1024px) {
+@media only screen and (orientation: landscape) and (max-height: 1024px) {
+    /* Home */
     .main-photo {
         height: 40rem;
     }
@@ -1059,21 +1071,54 @@ img {
     #banner .pt-1 {
         padding-top: 0;
     }
+    /* Cookies */
+    #footer.footer-fixed {
+        position: static;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 
 /* Smartphone landscape */
 
-@media only screen and (orientation: landscape) and (max-width: 850px) {
-    #banner {
-        height: 20vh;
+@media only screen and (orientation: landscape) and (max-height: 420px) {
+    /* Home */
+    /* Aankondiging */
+    #news h4 {
+        font-size: 0.8rem;
     }
-    #banner .content {
-        /* Top, right, bottom, left */
-        /* padding: 5rem 10rem 0 7rem; */
+    /* Links */
+    .links img {
+        width: 150px;
+        margin-top: 15px;
+    }
+    .links .btn {
+        margin-left: 3rem;
+    }
+    .btn {
+        padding: 5px 5px;
+    }
+    /* Acties */
+    #acties .acties .foto h2 {
+        font-size: 1.2rem;
+    }
+    /* Banner historiek & contact */
+    #banner {
+        height: 30vh;
     }
     #banner .content h1 {
-        font-size: 20px;
+        font-size: 1.2rem;
         font-weight: 800;
+    }
+    #banner .content ul li {
+        font-size: 0.8rem;
+    }
+    /* Historiek */
+    #timeline ul li div {
+        width: 250px;
+    }
+    #timeline ul li:nth-child(even) div {
+        left: -284px;
     }
 }
